@@ -1,0 +1,35 @@
+---
+label: Pages
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- name: show_title
+  type: boolean
+  label: Show Page Title
+  description: Display the page title above the content.
+- type: text
+  name: description
+  label: Page Description
+- type: datetime
+  name: date
+  label: Date
+  config:
+    date_format: YYYY-MM-DD
+    export_format: YYYY-MM-DD
+  default: now
+- type: text
+  name: extends
+  label: extends
+  hidden: true
+  default: _layouts.page
+- type: text
+  name: section
+  label: section
+  hidden: true
+  default: content
+pages:
+- source/index.md

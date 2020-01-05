@@ -1,0 +1,11 @@
+---
+- name: About Me
+  link: "/about"
+  external: false
+  page: source/_pages/about.md
+  url: ''
+- name: Contact Me
+  link: "/contact"
+  external: false
+  page: source/_pages/contact.md
+  url: ''

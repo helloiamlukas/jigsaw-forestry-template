@@ -1,0 +1,57 @@
+---
+label: Configuration
+hide_body: true
+fields:
+- name: site
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+    default: Jigsaw Forestry.io Template
+  - name: description
+    type: text
+    config:
+      required: true
+    label: Description
+    default: This is a Jigsaw starter template.
+  label: General
+- type: field_group
+  name: style
+  label: Style
+  fields:
+  - name: body
+    type: field_group
+    config: {}
+    fields:
+    - name: style
+      type: include
+      config: {}
+      template: style
+      label: style
+    label: Body
+  - name: main
+    type: field_group
+    config: {}
+    fields:
+    - name: style
+      type: include
+      config: {}
+      template: style
+      label: style
+    label: Main Content
+  - name: aside
+    type: field_group
+    config: {}
+    fields:
+    - name: style
+      type: include
+      config: {}
+      template: style
+      label: style
+    label: Sidebar
+pages:
+- source/config.yml

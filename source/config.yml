@@ -1,0 +1,44 @@
+---
+site:
+  name: Jigsaw Forestry.io Template
+  description: This is a Jigsaw starter template.
+style:
+  body:
+    background-color: ''
+    background-image: https://res.cloudinary.com/tacobell/image/upload/w_1600,q_auto,c_limit/v1578222521/test/csm_xtralign_hu_laser-fuer-niedrige-montageposition_1504x752_f4d4961d23_bjib5w.jpg
+    font-family: ''
+    color: ''
+    text-decoration: ''
+    border-width: 
+    border-color: ''
+    border-radius: 
+    background-repeat: repeat-x
+    background-position: bottom
+    background-size: ''
+    background-attachment: ''
+  main:
+    background-color: ''
+    background-image: ''
+    font-family: ''
+    color: ''
+    text-decoration: ''
+    border-width: 2
+    border-color: '#000'
+    border-radius: 
+    background-repeat: ''
+    background-position: ''
+    background-size: ''
+    background-attachment: ''
+  aside:
+    background-color: ''
+    background-image: ''
+    font-family: ''
+    color: ''
+    text-decoration: ''
+    border-width: 
+    border-color: ''
+    border-radius: 
+    background-repeat: ''
+    background-position: ''
+    background-size: ''
+    background-attachment: ''

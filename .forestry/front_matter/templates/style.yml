@@ -1,0 +1,198 @@
+---
+label: Style
+hide_body: true
+fields:
+- name: background-color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: background-image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+- name: background-repeat
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - repeat
+    - repeat-x
+    - repeat-y
+    - no-repeat
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Repeat
+- name: background-position
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    - top
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Position
+- name: background-size
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - cover
+    - contain
+    - auto
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Size
+- name: background-attachment
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - scroll
+    - fixed
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Attachment
+- name: font-size
+  type: number
+  label: Font Size
+  description: in Pixel
+  default: 0
+  required: true
+  config:
+    min: '1'
+    max: '100'
+    step: '1'
+- name: font-family
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Arial, 'Helvetica Neue', Helvetica, sans-serif
+    - "'Arial Black', 'Arial Bold', Gadget, sans-serif"
+    - "'Arial Narrow', Arial, sans-serif"
+    - Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif
+    - Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif
+    - "'Century Gothic', CenturyGothic, AppleGothic, sans-serif"
+    - "'Gill Sans', 'Gill Sans MT', Calibri, sans-serif"
+    - Tahoma, Verdana, Segoe, sans-serif
+    - "'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma,
+      sans-serif"
+    - Verdana, Geneva, sans-serif
+    - Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman',
+      serif
+    - "'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia,
+      serif"
+    - "'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler
+      Text', 'Bitstream Charter', Georgia, serif"
+    - Cambria, Georgia, serif
+    - Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman',
+      serif
+    - Georgia, Times, 'Times New Roman', serif
+    - "'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif"
+    - "'Lucida Bright', Georgia, serif"
+    - Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif
+    - TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif
+    - Consolas, monaco, monospace
+    - "'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace"
+    - "'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono',
+      monospace"
+    - Copperplate, 'Copperplate Gothic Light', fantasy
+    - Papyrus, fantasy
+    - "'Brush Script MT', cursive"
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Font Family
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex
+- name: text-decoration
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - underline
+    - overline
+    - line-through
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Decoration
+- name: border-width
+  type: number
+  label: Border Width
+  description: in Pixel
+  default: 0
+  required: false
+  config:
+    min: '0'
+    max: 
+    step: '1'
+- name: border-style
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - solid
+    - dotted
+    - dashed
+    - double
+    - groove
+    - ridge
+    - inset
+    - outset
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Border Style
+- name: border-color
+  type: color
+  label: Border Color
+  config:
+    required: false
+    color_format: Hex
+- name: border-radius
+  type: number
+  label: Border Radius
+  description: in Pixel
+  default: 0
+  required: false
+  config:
+    min: '0'
+    max: 
+    step: '1'

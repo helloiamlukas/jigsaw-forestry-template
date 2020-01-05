@@ -1,0 +1,31 @@
+body, html, .container-fluid {
+  height: 100%;
+}
+
+.wrapper {
+  max-height: 100%;
+  max-width: map-get($container-max-widths, xl);
+}
+
+main {
+  max-height: 100%;
+  overflow-y: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+aside {
+  @include media-breakpoint-up(md) {
+    max-width: 300px !important;
+    min-height: 100vh;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  &:focus, &:hover, &.active {
+    box-shadow: inset 0px -1px 0px black;
+  }
+}

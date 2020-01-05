@@ -1,0 +1,19 @@
+// Variables
+@import "bootstrap/variables";
+// Bootstrap
+@import "bootstrap/bootstrap";
+// Bootstrap Custom
+@import "bootstrap/custom";
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus, .focus {
+  outline: none !important;
+}
+
+input[type=text] {
+  appearance: none;
+}

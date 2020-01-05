@@ -1,0 +1,32 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/source/manage"
+webhook_url: 
+sections:
+- type: heading
+  label: Pages
+- type: document
+  path: source/index.md
+  label: Startpage
+- type: directory
+  path: source/_pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - pages
+- type: heading
+  label: Configuration
+- type: document
+  path: source/navigation.yml
+  label: Navigation
+- type: document
+  path: source/config.yml
+  label: Configuration
+upload_dir: {{ PUT IN YOUR CLOUDINARY UPLOAD DIRECTORY HERE }}
+public_path: https://res.cloudinary.com/{{ PUT IN YOUR CLOUDINARY CLOUD NAME HERE }}/image/upload/w_1600,q_auto,c_limit
+front_matter_path: ''
+use_front_matter_path: 
+file_template: ":filename:"

@@ -1,0 +1,42 @@
+---
+label: Navigation
+hide_body: true
+fields:
+- type: field_group_list
+  name: Navigation
+  label: Navigation
+  fields:
+  - type: text
+    name: name
+    label: Label
+    config:
+      required: true
+  - type: boolean
+    name: external
+    label: External URL
+  - name: page
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: pages
+        file: source/navigation.yml
+        path: 
+    label: Page
+    showOnly:
+      field: external
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+    showOnly:
+      field: external
+      value: true
+  config:
+    labelField: name
+pages:
+- source/navigation.yml
