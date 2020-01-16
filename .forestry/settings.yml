@@ -30,3 +30,10 @@ public_path: https://res.cloudinary.com/{{ PUT IN YOUR CLOUDINARY CLOUD NAME HER
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
+build:
+  preview_output_directory: build_staging
+  install_dependencies_command: sudo npm run forestry:install
+  preview_docker_image: circleci/php:7.3-node
+  mount_path: "/home/circleci/app"
+  working_dir: "/home/circleci/app"
+  instant_preview_command: sudo npm run forestry:preview
