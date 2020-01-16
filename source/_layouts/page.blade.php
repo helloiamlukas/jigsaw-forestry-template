@@ -29,7 +29,7 @@
         <meta name="og:type" content="website">
     @endsection
 
-    <link rel="stylesheet" href="{{ mix('css/app.css', 'assets/build') }}">
+    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 
     <style>
         @foreach($page->config['style'] as $class => $attributes)
@@ -83,6 +83,6 @@
     </div>
 </div>
 
-<script src="{{ mix('js/app.js', 'assets/build') }}" type="text/javascript"></script>
+<script src="{{ mix('js/main.js', 'assets/build') }}" type="text/javascript"></script>
 </body>
 </html>
