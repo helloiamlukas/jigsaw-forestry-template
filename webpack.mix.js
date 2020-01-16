@@ -1,3 +1,10 @@
+const {exec} = require('child_process');
+let argv = require('yargs').argv;
+
+if (argv.serve) {
+    exec('mkdir -p build_staging && ./vendor/bin/jigsaw serve staging --port=8080 --host=0.0.0.0')
+}
+
 let mix = require('laravel-mix');
 let build = require('./tasks/build.js');
 
@@ -5,7 +12,6 @@ mix.setPublicPath('source/assets/build');
 mix.webpackConfig({
     plugins: [
         build.jigsaw,
-        // build.browserSync(),
         build.watch([
             'config.php',
             'source/**/*.md',

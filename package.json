@@ -6,7 +6,8 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
         "dev": "npm run local",
         "watch": "npm run local -- --watch",
-        "setup": "composer install && npm install"
+        "forestry:install": "composer install && npm install",
+        "forestry:preview": "npm run production -- --watch --serve"
     },
     "devDependencies": {
         "axios": "^0.18.0",
