@@ -1,7 +1,10 @@
 <?php
 
 return [
-    'delete'   => [],
+    'delete'   => [
+        'source/_layouts/master.blade.php',
+        'source/index.blade.php'
+    ],
     'ignore'   => [],
     'commands' => [
         'composer install',
