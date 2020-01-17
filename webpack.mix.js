@@ -22,9 +22,9 @@ mix.webpackConfig({
     ]
 });
 
-mix.js('source/_assets/js/app.js', 'js')
+mix.js('source/_assets/js/main.js', 'js')
     .sourceMaps()
-    .sass('source/_assets/sass/app.scss', 'css')
+    .sass('source/_assets/sass/main.scss', 'css')
     .options({
         processCssUrls: false,
     })
