@@ -1,6 +1,7 @@
 /build_local/
 /node_modules/
 /vendor/
+/cache
 .idea
 .DS_Store
 /source/assets/build/
