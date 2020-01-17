@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-test.netlify.com',
+    'baseUrl' => 'https://jigsaw-forestry-template.netlify.com',
     'production' => true,
 ];
