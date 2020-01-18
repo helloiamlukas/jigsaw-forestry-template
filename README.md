@@ -1,5 +1,5 @@
 # ![Jigsaw template for Forestry.io](jigsaw-forestry-template.png)
-Simple Jigsaw website template for Forestry.io, with easy deployment Netlify ⚡️
+Simple Jigsaw website template for Forestry.io, with easy deployment on Netlify ⚡️
 - [Jigsaw – Static Sites for Laravel Developers](https://jigsaw.tighten.co/)
 - [Forestry.io - Git-backed CMS](https://forestry.io/)
 - [Netlify - All-in-one platform for automating modern web projects](https://www.netlify.com/)
