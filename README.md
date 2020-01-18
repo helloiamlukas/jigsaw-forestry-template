@@ -14,10 +14,10 @@ This Jigsaw starter template comes pre-configured with:
 - Netlify deployment configuration
 
 In addition it includes a Forestry.io configuration with the following features:
-- Easily add new pages
-- Arrange items in the navigation bar
-- Basic css styling directly in the CMS 
-- [Cloudinary](https://cloudinary.com/) media management
+- Easily add new pages 📝
+- Arrange items in the navigation bar ↕️
+- Basic css styling directly in the CMS 💅
+- [Cloudinary](https://cloudinary.com/) media management 🌄
 - Live preview 🖥✨(powered by CircleCI docker image `circleci/php:7.3-node`)  
 
 ## Requirements
@@ -58,7 +58,7 @@ public_path: https://res.cloudinary.com/coolcloud/image/upload/w_1600,q_auto,c_l
 ```
 
 ### Deployment
-For easy deployment, use [Netlify](https://www.netlify.com/). The template already includes a `netlify.toml` file with all necessary configuration. Just import your repository from the [Dashboard](https://app.netlify.com/) and you're good to go!
+For easy deployment, use [Netlify](https://www.netlify.com/). The template already includes a `netlify.toml` file with all necessary configuration. Just import your repository from the [Dashboard](https://app.netlify.com/) and you're good to go 😎
 
 ### Forestry.io Setup
 
@@ -72,3 +72,13 @@ Login into your Forestry.io account and go to the [Dashboard](https://app.forest
 4. After the project has been imported, **ignore the setup wizard**.
 5. In the sidebar, go to *Settings* and select *General » Deploy Admin* to generate the CMS Backend.
 6. Now, you should be apple to access the CMS via [https://your-site-name.netlify.com/manage/](https://your-site-name.netlify.com/manage/)
+
+
+## Usage
+
+For further information how to use Jigsaw, Forestry.io and/or Netlify, please refer to their documentation.
+- [Jigsaw - Documentation](https://jigsaw.tighten.co/docs/content/)
+- [Forestry.io - Documentation](https://forestry.io/docs/welcome/)
+- [Netlify - Documentation](https://docs.netlify.com/)
+
+For questions regarding this project, please use the [Issue](https://github.com/helloiamlukas/jigsaw-forestry-template/issues) section. 
