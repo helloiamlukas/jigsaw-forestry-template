@@ -7,7 +7,7 @@
         "dev": "npm run local",
         "watch": "npm run local -- --watch",
         "forestry:install": "composer install && npm install",
-        "forestry:preview": "npm run production -- --watch --serve"
+        "forestry:preview": "npm run staging -- --watch --serve"
     },
     "devDependencies": {
         "axios": "^0.18.0",
