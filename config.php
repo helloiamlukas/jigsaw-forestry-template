@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl'         => 'http://jigsaw.test',
+    'baseUrl'         => 'http://localhost:8000',
     'trailingSlashes' => false,
     'production'      => false,
 
