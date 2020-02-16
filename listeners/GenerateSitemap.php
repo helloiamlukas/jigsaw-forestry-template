@@ -8,6 +8,7 @@ class GenerateSitemap
     public function handle(Jigsaw $jigsaw)
     {
         $baseUrl = $jigsaw->getConfig('baseUrl');
+        $trailingSlashes = $jigsaw->getConfig('trailingSlashes');
 
         if (!$baseUrl) {
             echo("\nTo generate a sitemap.xml file, please specify a 'baseUrl' in config.php.\n\n");
@@ -25,11 +26,11 @@ class GenerateSitemap
 //        ];
 //
 //        foreach ($pages as $page) {
-//            $sitemap->addItem($baseUrl . '/' . $page, time(), Sitemap::DAILY);
+//            $sitemap->addItem($baseUrl . '/' . $page . ($page->trailingSlashes ? '/' : ''), time(), Sitemap::DAILY);
 //        }
 
         $jigsaw->getCollection('pages')->each(function ($page) use ($baseUrl, $sitemap) {
-            $sitemap->addItem(rtrim($baseUrl, '/') . '/' . $page->getFilename(), time(), Sitemap::DAILY);
+            $sitemap->addItem(rtrim($baseUrl, '/') . '/' . $page->getFilename() . ($page->trailingSlashes ? '/' : ''), time(), Sitemap::DAILY);
         });
 
         $sitemap->write();
