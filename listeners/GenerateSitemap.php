@@ -16,6 +16,18 @@ class GenerateSitemap
 
         $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
 
+        /**
+         * Add Custom Paths
+         */
+
+//        $pages = [
+//            '', 'page-123', 'support'
+//        ];
+//
+//        foreach ($pages as $page) {
+//            $sitemap->addItem($baseUrl . '/' . $page, time(), Sitemap::DAILY);
+//        }
+
         $jigsaw->getCollection('pages')->each(function ($page) use ($baseUrl, $sitemap) {
             $sitemap->addItem(rtrim($baseUrl, '/') . '/' . $page->getFilename(), time(), Sitemap::DAILY);
         });
