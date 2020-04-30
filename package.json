@@ -17,7 +17,7 @@
         "cross-env": "^5.2.0",
         "extra-watch-webpack-plugin": "^1.0.3",
         "hasbin": "^1.2.3",
-        "jquery": "^3.3.1",
+        "jquery": "^3.5.0",
         "laravel-mix": "^4.1.2",
         "node-cmd": "^3.0.0",
         "on-build-webpack": "^0.1.0",
